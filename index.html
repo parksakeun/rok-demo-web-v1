@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>War of Commanders - Demo</title>
+    <script src="godot.loader.js"></script>
+  </head>
+  <body>
+    <script>
+      Engine = new EngineSingleton();
+      Engine.startGame({
+        canvas: document.body,
+        args: [],
+        executable: "game",
+        fileSizes: {
+          "game.pck": 12345678,
+          "game.wasm": 23456789,
+        },
+      });
+    </script>
+  </body>
+</html>
